@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Floriene – Handmade Crochet Flowers Surabaya</title>
-  <meta name="description" content="Floriene – handmade flower keychains & single blooms from Surabaya. Beautiful, kawaii, and full of love. Order now!">
+  <title>Floriene – Bunga Rajut Handmade Surabaya</title>
+  <meta name="description" content="Floriene – gantungan kunci bunga & bunga tunggal handmade dari Surabaya. Cantik, kawaii, dan penuh rasa. Pesan sekarang!">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- ══════════════════════
+     NAVBAR
+══════════════════════ -->
 <nav class="navbar" id="navbar">
   <a href="#home" class="nav-logo">
     <img src="logo.png" alt="Floriene">
@@ -19,23 +21,29 @@
   </a>
 
   <ul class="nav-links">
-    <li><a href="#products">Products</a></li>
-    <li><a href="#benefits">Benefits</a></li>
+    <li><a href="#produk">Produk</a></li>
+    <li><a href="#keunggulan">Keunggulan</a></li>
     <li><a href="#loyalty">Loyalty Card</a></li>
-    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#testimoni">Ulasan</a></li>
   </ul>
 
   <div class="nav-cta">
-    <button class="btn btn-pink btn-sm">
-      Order Now
+    <button class="btn btn-pink btn-sm"
+      onclick="document.getElementById('pesan').scrollIntoView({behavior:'smooth'})">
+      Pesan Sekarang
     </button>
   </div>
 </nav>
 
+
+<!-- ══════════════════════
+     HERO
+══════════════════════ -->
 <section class="hero" id="home">
   <div class="container">
     <div class="hero-inner">
 
+      <!-- Teks kiri -->
       <div>
         <div class="hero-pill">🌸 Handmade · Surabaya · Est. 2026</div>
         <h1 class="hero-h1">
@@ -43,42 +51,45 @@
           in Little Things
         </h1>
         <p class="hero-p">
-          Handmade crochet flower keychains & single blooms that are beautiful and full of love. Crafted one by one, a gift that never withers.
+          Gantungan kunci bunga &amp; bunga tunggal rajut tangan yang cantik, kawaii,
+          dan penuh rasa. Dibuat satu per satu — hadiah yang tidak pernah layu.
         </p>
         <div class="hero-btns">
-          <a href="#order" class="btn btn-pink">🌷 Order Now</a>
-          <a href="#products" class="btn btn-ghost">View Collection</a>
+          <a href="#pesan" class="btn btn-pink">🌷 Pesan Sekarang</a>
+          <a href="#produk" class="btn btn-ghost">Lihat Koleksi</a>
         </div>
         <div class="hero-trust">
           <div class="trust-item"><span>✓</span> 100% Handmade</div>
-          <div class="trust-item"><span>✓</span> Custom requests</div>
-          <div class="trust-item"><span>✓</span> Cute packaging</div>
+          <div class="trust-item"><span>✓</span> Custom request</div>
+          <div class="trust-item"><span>✓</span> Packaging kawaii</div>
         </div>
       </div>
 
+      <!-- Visual kanan — card + badge statik -->
       <div class="hero-visual">
         <div class="hero-card-wrap">
           <div class="hero-card">
             <img src="logo.png" alt="Floriene">
             <div class="hero-card-name">Floriene</div>
-            <div class="hero-card-sub">Handmade Bouquet & Accessories<br>Share the beauty in little things</div>
+            <div class="hero-card-sub">Handmade Bouquet &amp; Accessories<br>Share the beauty in little things</div>
             <span class="hero-card-badge">🌸 Floriene Surabaya</span>
           </div>
+          <!-- Badge statik di pojok -->
           <div class="hbadge hb-tl">
             <span class="hbadge-icon">🎀</span>
-            <div>Free Wrapping<span class="hbadge-sub">All orders</span></div>
+            <div>Free Wrapping<span class="hbadge-sub">Semua pesanan</span></div>
           </div>
           <div class="hbadge hb-tr">
             <span class="hbadge-icon">⭐</span>
-            <div>Trusted<span class="hbadge-sub">30+ customers</span></div>
+            <div>Trusted<span class="hbadge-sub">30+ pelanggan</span></div>
           </div>
           <div class="hbadge hb-bl">
             <span class="hbadge-icon">🌸</span>
-            <div>Handmade<span class="hbadge-sub">Made with ❤</span></div>
+            <div>Handmade<span class="hbadge-sub">Dibuat dengan ❤</span></div>
           </div>
           <div class="hbadge hb-br">
             <span class="hbadge-icon">✨</span>
-            <div>Custom Order<span class="hbadge-sub">As you wish</span></div>
+            <div>Custom Order<span class="hbadge-sub">Sesuai keinginan</span></div>
           </div>
         </div>
       </div>
@@ -87,20 +98,24 @@
   </div>
 </section>
 
+
+<!-- ══════════════════════
+     STATS
+══════════════════════ -->
 <div class="stats">
   <div class="container">
     <div class="stats-grid">
       <div class="stat-cell">
         <div class="stat-n">30+</div>
-        <div class="stat-l">Happy Customers</div>
+        <div class="stat-l">Pelanggan Puas</div>
       </div>
       <div class="stat-cell">
         <div class="stat-n">2</div>
-        <div class="stat-l">Product Collections</div>
+        <div class="stat-l">Koleksi Produk</div>
       </div>
       <div class="stat-cell">
         <div class="stat-n">5+</div>
-        <div class="stat-l">Flower Variants</div>
+        <div class="stat-l">Varian Bunga</div>
       </div>
       <div class="stat-cell">
         <div class="stat-n">100%</div>
@@ -110,33 +125,39 @@
   </div>
 </div>
 
-<section class="products" id="products">
+
+<!-- ══════════════════════
+     PRODUK
+══════════════════════ -->
+<section class="products" id="produk">
   <div class="container">
     <div class="sec-head-center">
-      <span class="sec-label">Collection</span>
-      <h2 class="sec-title">Our Products</h2>
-      <p class="sec-sub">Two handmade crafted flower collections, from cute keychains to elegant single blooms.</p>
+      <span class="sec-label">Koleksi</span>
+      <h2 class="sec-title">Produk Kami</h2>
+      <p class="sec-sub">Dua koleksi bunga rajut handmade — dari gantungan kunci imut hingga bunga tunggal yang elegan.</p>
     </div>
 
+    <!-- ── Bloomies Keychain ── -->
     <div class="cat-block">
       <div class="cat-head">
         <div class="cat-icon a">🔑</div>
         <div class="cat-head-info">
           <h3>Bloomies Keychain</h3>
-          <p>Flower keychains - cute, lightweight, making your stuff even prettier</p>
+          <p>Gantungan kunci bunga rajut kawaii — imut, ringan, bikin aksesoris makin cantik</p>
         </div>
       </div>
       <div class="cat-body">
         <div class="pg pg-2">
 
+          <!-- Bloomies Lily -->
           <div class="prod-card">
-            <div class="prod-thumb">
-              <img src="lbloomies.jpg" alt="Bloomies Lily">
-              <span class="prod-ribbon">Favorite</span>
+            <div class="prod-img-wrap">
+              <img src="lbloomies.jpg" alt="Bloomies Lily" class="prod-thumb">
+              <span class="prod-ribbon" style="background:var(--pink);">Favorit</span>
             </div>
             <div class="prod-body">
               <div class="prod-name">Bloomies Lily</div>
-              <p class="prod-desc">Lily flower — available in 4 beautiful colors of your choice</p>
+              <p class="prod-desc">Bunga lily rajut — tersedia 4 warna cantik pilihanmu</p>
               <div class="chips">
                 <span class="chip"><span class="chip-dot" style="background:#F8C8DC;"></span>Baby Pink</span>
                 <span class="chip"><span class="chip-dot" style="background:#C9B3E8;"></span>Lilac</span>
@@ -145,22 +166,23 @@
               </div>
               <div class="prod-footer">
                 <div class="prod-price">Rp 15.000 <span class="prod-per">/each</span></div>
-                <button class="btn btn-pink btn-sm">Order</button>
+                <button class="btn btn-pink btn-sm" onclick="pilihProduk('Bloomies Lily')">Pesan</button>
               </div>
             </div>
           </div>
 
+          <!-- Bloomies Sunflower -->
           <div class="prod-card">
-            <div class="prod-thumb">
-              <img src="sbloomies.jpg" alt="Bloomies Sunflower">
-              <span class="prod-ribbon">Cheerful</span>
+            <div class="prod-img-wrap">
+              <img src="sbloomies.jpg" alt="Bloomies Sunflower" class="prod-thumb">
+              <span class="prod-ribbon" style="background:#D08000;">Ceria</span>
             </div>
             <div class="prod-body">
               <div class="prod-name">Bloomies Sunflower</div>
-              <p class="prod-desc">Bright & adorable handmade sunflower</p>
+              <p class="prod-desc">Bunga matahari rajut yang cerah &amp; menggemaskan</p>
               <div class="prod-footer" style="margin-top:10px;">
                 <div class="prod-price">Rp 18.000 <span class="prod-per">/each</span></div>
-                <button class="btn btn-pink btn-sm">Order</button>
+                <button class="btn btn-pink btn-sm" onclick="pilihProduk('Bloomies Sunflower')">Pesan</button>
               </div>
             </div>
           </div>
@@ -169,84 +191,90 @@
       </div>
     </div>
 
+    <!-- ── Everbloom Single Stem ── -->
     <div class="cat-block">
       <div class="cat-head">
         <div class="cat-icon b">🌷</div>
         <div class="cat-head-info">
           <h3>Everbloom Single Stem</h3>
-          <p>Elegant handmade single flowers, a gift that never withers</p>
+          <p>Bunga tunggal rajut tangan yang elegan — hadiah yang tidak pernah layu</p>
         </div>
       </div>
       <div class="cat-body">
         <div class="pg pg-4">
 
+          <!-- Tulip Baby Pink -->
           <div class="prod-card">
-            <div class="prod-thumb">
-              <img src="babypink.jpg" alt="Tulip Baby Pink">
-              <span class="prod-ribbon">Sweet</span>
+            <div class="prod-img-wrap">
+              <img src="babypink.jpg" alt="Tulip Baby Pink" class="prod-thumb">
+              <span class="prod-ribbon" style="background:var(--pink);">Sweet</span>
             </div>
             <div class="prod-body">
               <div class="prod-name">Tulip Baby Pink</div>
               <div class="prod-footer" style="margin-top:8px;">
                 <div class="prod-price">Rp 22.000</div>
-                <button class="btn btn-pink btn-sm">Order</button>
+                <button class="btn btn-pink btn-sm" onclick="pilihProduk('Everbloom Tulip Baby Pink')">Pesan</button>
               </div>
             </div>
           </div>
 
+          <!-- Tulip Hot Pink -->
           <div class="prod-card">
-            <div class="prod-thumb">
-              <img src="hotpink.jpg" alt="Tulip Hot Pink">
-              <span class="prod-ribbon">Bold</span>
+            <div class="prod-img-wrap">
+              <img src="hotpink.jpg" alt="Tulip Hot Pink" class="prod-thumb">
+              <span class="prod-ribbon" style="background:#C82070;">Bold</span>
             </div>
             <div class="prod-body">
               <div class="prod-name">Tulip Hot Pink</div>
               <div class="prod-footer" style="margin-top:8px;">
                 <div class="prod-price">Rp 22.000</div>
-                <button class="btn btn-pink btn-sm">Order</button>
+                <button class="btn btn-pink btn-sm" onclick="pilihProduk('Everbloom Tulip Hot Pink')">Pesan</button>
               </div>
             </div>
           </div>
 
+          <!-- Sunflower -->
           <div class="prod-card">
-            <div class="prod-thumb">
-              <img src="sunflower.jpg" alt="Sunflower">
-              <span class="prod-ribbon">Bright</span>
+            <div class="prod-img-wrap">
+              <img src="sunflower.jpg" alt="Everbloom Sunflower" class="prod-thumb">
+              <span class="prod-ribbon" style="background:#D08000;">Cerah</span>
             </div>
             <div class="prod-body">
               <div class="prod-name">Sunflower</div>
               <div class="prod-footer" style="margin-top:8px;">
                 <div class="prod-price">Rp 25.000</div>
-                <button class="btn btn-pink btn-sm">Order</button>
+                <button class="btn btn-pink btn-sm" onclick="pilihProduk('Everbloom Sunflower')">Pesan</button>
               </div>
             </div>
           </div>
 
+          <!-- Peony -->
           <div class="prod-card">
-            <div class="prod-thumb">
-              <img src="peony.png" alt="Peony">
-              <span class="prod-ribbon">Premium</span>
+            <div class="prod-img-wrap">
+              <img src="peony.png" alt="Everbloom Peony" class="prod-thumb">
+              <span class="prod-ribbon" style="background:#9B4A7A;">Premium</span>
             </div>
             <div class="prod-body">
               <div class="prod-name">Peony</div>
               <div class="prod-footer" style="margin-top:8px;">
-                <div class="prod-price">Rp 35.000</div>
-                <button class="btn btn-pink btn-sm">Order</button>
+                <div class="prod-price">Rp 30.000</div>
+                <button class="btn btn-pink btn-sm" onclick="pilihProduk('Everbloom Peony')">Pesan</button>
               </div>
             </div>
           </div>
 
         </div>
 
+        <!-- Custom Request -->
         <div class="custom-row">
           <div class="custom-left">
             <span class="custom-icon">✨</span>
             <div class="custom-text">
               <h4>Custom Request</h4>
-              <p>Have a specific flower or favorite color in mind? We can make it specially for you, Free consultation!</p>
+              <p>Punya bunga atau warna favorit lain? Kami bisa membuatkannya khusus — konsultasi gratis!</p>
             </div>
           </div>
-          <button class="btn-purple">Consultation →</button>
+          <button class="btn-purple" onclick="pilihProduk('Custom Request')">Konsultasi →</button>
         </div>
 
       </div>
@@ -255,113 +283,126 @@
   </div>
 </section>
 
-<section class="benefits" id="benefits">
+
+<!-- ══════════════════════
+     KEUNGGULAN
+══════════════════════ -->
+<section class="benefits" id="keunggulan">
   <div class="container">
     <div class="sec-head-center">
-      <span class="sec-label">Benefits</span>
-      <h2 class="sec-title">Why Floriene?</h2>
-      <p class="sec-sub">Three things that make Floriene different and always loved by our customers.</p>
+      <span class="sec-label">Keunggulan</span>
+      <h2 class="sec-title">Kenapa Floriene?</h2>
+      <p class="sec-sub">Tiga hal yang membuat Floriene berbeda dan selalu dicintai pelanggannya.</p>
     </div>
     <div class="benefits-grid">
       <div class="benefit-card">
         <div class="b-icon">🌸</div>
         <h3>100% Handmade</h3>
-        <p>Every product is made one by one by hand, not machines. Every detail is poured with care and love.</p>
+        <p>Setiap produk dibuat satu per satu dengan tangan — bukan mesin. Setiap detail penuh perhatian dan cinta.</p>
       </div>
       <div class="benefit-card">
         <div class="b-icon">🎀</div>
-        <h3>Cute Packaging</h3>
-        <p>Packed in cute packaging ready to be gifted right away, even the unboxing becomes a joyful moment!</p>
+        <h3>Packaging Kawaii</h3>
+        <p>Dikemas dalam packaging imut yang siap jadi hadiah langsung — unboxing-nya pun jadi momen yang menyenangkan!</p>
       </div>
       <div class="benefit-card">
         <div class="b-icon">🎨</div>
-        <h3>Custom Requests</h3>
-        <p>Want a specific color or flower not in the catalog? We accept custom orders with a free consultation.</p>
+        <h3>Custom Request</h3>
+        <p>Ingin warna atau bunga tertentu yang belum ada di katalog? Kami menerima custom order dengan konsultasi gratis.</p>
       </div>
     </div>
   </div>
 </section>
 
+
+<!-- ══════════════════════
+     LOYALTY CARD
+══════════════════════ -->
 <section class="loyalty" id="loyalty">
   <div class="container">
     <div class="sec-head-center">
-      <span class="sec-label">Loyalty Program</span>
-      <h2 class="sec-title">Floriene Loyalty Card</h2>
-      <p class="sec-sub">Every purchase earns a stamp. Collect 10 stamps, get 1 free Bloomies!</p>
+      <span class="sec-label">Program Loyalitas</span>
+      <h2 class="sec-title">Loyalty Card Floriene</h2>
+      <p class="sec-sub">Setiap pembelian mengumpulkan stempel. Kumpulkan 10 stempel, dapat 1 Bloomies gratis!</p>
     </div>
 
     <div class="loyalty-steps">
       <div class="loyalty-step">
         <div class="step-num">1</div>
-        <h4>Buy Products</h4>
-        <p>Every 1 transaction gets you <strong>1 stamp</strong> on your loyalty card.</p>
+        <h4>Beli Produk</h4>
+        <p>Setiap 1 transaksi mendapatkan <strong>1 stempel</strong> pada loyalty card-mu.</p>
       </div>
       <div class="loyalty-step">
         <div class="step-num">2</div>
-        <h4>Collect 10 Stamps</h4>
-        <p>Keep collecting until you reach <strong>10 stamps</strong> from 10 transactions.</p>
+        <h4>Kumpulkan 10 Stempel</h4>
+        <p>Kumpulkan terus hingga <strong>10 stempel</strong> dari 10 kali transaksi.</p>
       </div>
       <div class="loyalty-step">
         <div class="step-num">3</div>
-        <h4>Claim Reward 🎉</h4>
-        <p>Show your full card and get <strong>1 free Bloomies Keychain</strong>!</p>
+        <h4>Tukar Hadiah 🎉</h4>
+        <p>Tunjukkan kartu penuh dan dapat <strong>1 Bloomies Keychain gratis</strong>!</p>
       </div>
     </div>
 
     <div class="tnc-box">
-      <h4>📋 Terms &amp; Conditions</h4>
+      <h4>📋 Syarat &amp; Ketentuan</h4>
       <ul class="tnc-list">
-        <li>Rewards can only be exchanged for Bloomies Keychain products</li>
-        <li>Rewards cannot be exchanged for cash or other products</li>
-        <li>Loyalty cards cannot be combined with other cards</li>
-        <li>Don't forget to bring your card to get a stamp & claim your reward</li>
+        <li>Reward hanya bisa ditukar dengan produk Bloomies Keychain</li>
+        <li>Reward tidak bisa ditukar dengan uang tunai atau produk lainnya</li>
+        <li>Loyalty card tidak bisa digabungkan dengan kartu lainnya</li>
+        <li>Jangan lupa bawa kartu untuk mendapat stempel &amp; klaim reward</li>
       </ul>
     </div>
 
     <div class="loyalty-card-grid">
       <div>
         <div class="lcard-frame">
-          <img src="loyaltyfront.png" alt="Floriene Loyalty Card – Front">
+          <img src="loyaltyfront.png" alt="Loyalty Card Floriene – Depan">
         </div>
-        <p class="lcard-cap">Front View</p>
+        <p class="lcard-cap">Tampilan Depan</p>
       </div>
       <div>
         <div class="lcard-frame">
-          <img src="loyaltyback.jpg" alt="Floriene Loyalty Card – Back">
+          <img src="loyaltyback.jpg" alt="Loyalty Card Floriene – Belakang">
         </div>
-        <p class="lcard-cap">Back View</p>
+        <p class="lcard-cap">Tampilan Belakang</p>
       </div>
     </div>
+
   </div>
 </section>
 
-<section class="testimonials" id="reviews">
+
+<!-- ══════════════════════
+     TESTIMONI
+══════════════════════ -->
+<section class="testimonials" id="testimoni">
   <div class="container">
     <div class="sec-head-center">
-      <span class="sec-label">Reviews</span>
-      <h2 class="sec-title">What They Say</h2>
-      <p class="sec-sub">Real stories from customers who have experienced the beauty of Floriene.</p>
+      <span class="sec-label">Ulasan</span>
+      <h2 class="sec-title">Kata Mereka</h2>
+      <p class="sec-sub">Cerita nyata dari pelanggan yang sudah merasakan keindahan Floriene.</p>
     </div>
     <div class="testi-grid">
       <div class="testi-card">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"The Bloomies keychain is so cute! The colors match the photos perfectly, and the packaging is neat and adorable. Gifted it straight to my best friend, and she loves it! Will definitely order again."</p>
+        <p class="testi-text">"Gantungan kunci Bloomies-nya lucu banget! Warnanya persis sama foto, packagingnya rapih dan imut. Langsung dijadiin hadiah buat sahabat — dia suka banget! Pasti order lagi."</p>
         <div class="testi-person">
           <div class="testi-av">👩</div>
           <div>
-            <div class="testi-name">Jocelyn</div>
-            <div class="testi-role">Floriene Customer</div>
+            <div class="testi-name">Christa K.</div>
+            <div class="testi-role">Pelanggan Floriene</div>
           </div>
         </div>
       </div>
       <div class="testi-card">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Bought the Everbloom Single Stem as a birthday gift for mom, the result is so beautiful! The flower details are neat, aesthetic packaging. Mom was so happy. Highly recommended!"</p>
+        <p class="testi-text">"Beli Everbloom Single Stem buat kado ulang tahun mama — hasilnya cantik banget! Detail bunganya rapi, packaging-nya aesthetic. Mama senang banget. Sangat recommended!"</p>
         <div class="testi-person">
           <div class="testi-av">🧑</div>
           <div>
-            <div class="testi-name">Jessica</div>
-            <div class="testi-role">Floriene Customer</div>
+            <div class="testi-name">Kevin R.</div>
+            <div class="testi-role">Pelanggan Floriene</div>
           </div>
         </div>
       </div>
@@ -369,45 +410,54 @@
   </div>
 </section>
 
+
+<!-- ══════════════════════
+     CTA BANNER
+══════════════════════ -->
 <section class="cta-banner">
   <img src="logo.png" alt="Floriene" class="cta-logo">
-  <div class="cta-label">Ready to Order?</div>
-  <div class="cta-h2">Order Now,<br>Right Here!</div>
-  <p class="cta-p">Fill out the order form below, we'll process it with love. Free consultation for custom requests!</p>
-  <button class="btn btn-white">
-    🌷 Fill Order Form
+  <div class="cta-label">Siap Pesan?</div>
+  <div class="cta-h2">Pesan Sekarang,<br>Langsung di Sini!</div>
+  <p class="cta-p">Isi form pesanan di bawah — kami proses dengan penuh rasa. Gratis konsultasi untuk custom request!</p>
+  <button class="btn btn-white"
+    onclick="document.getElementById('pesan').scrollIntoView({behavior:'smooth'})">
+    🌷 Isi Form Pesanan
   </button>
   <p class="cta-footnote">
-    <strong>Free</strong> consultation &nbsp;·&nbsp;
-    <strong>Custom</strong> requests &nbsp;·&nbsp;
-    <strong>Kawaii</strong> packaging
+    <strong>Gratis</strong> konsultasi &nbsp;·&nbsp;
+    <strong>Custom</strong> request &nbsp;·&nbsp;
+    <strong>Packaging</strong> kawaii
   </p>
 </section>
 
-<section class="form-section" id="order">
+
+<!-- ══════════════════════
+     FORM PESANAN
+══════════════════════ -->
+<section class="form-section" id="pesan">
   <div class="container">
     <div class="form-card">
       <div class="form-logo-row">
         <img src="logo.png" alt="Floriene">
       </div>
-      <div class="form-title">Order Form</div>
-      <p class="form-sub">Fill out the details below, we'll process it right away. Custom consultation is free!</p>
+      <div class="form-title">Form Pesanan</div>
+      <p class="form-sub">Isi data di bawah — kami proses segera. Konsultasi custom gratis!</p>
 
       <div id="order-form">
         <div class="fg-row">
           <div class="fg">
-            <label for="f-name">Full Name</label>
-            <input type="text" id="f-name" placeholder="Your name..." required>
+            <label for="f-nama">Nama Lengkap</label>
+            <input type="text" id="f-nama" placeholder="Nama kamu..." required>
           </div>
           <div class="fg">
-            <label for="f-phone">WhatsApp Number</label>
-            <input type="tel" id="f-phone" placeholder="08xx-xxxx-xxxx" required>
+            <label for="f-hp">Nomor WhatsApp</label>
+            <input type="tel" id="f-hp" placeholder="08xx-xxxx-xxxx" required>
           </div>
         </div>
         <div class="fg">
-          <label for="f-product">Select Product</label>
-          <select id="f-product" required>
-            <option value="">— Select a product —</option>
+          <label for="f-produk">Pilih Produk</label>
+          <select id="f-produk" required>
+            <option value="">— Pilih produk —</option>
             <optgroup label="Bloomies Keychain">
               <option value="Bloomies Lily – Baby Pink (Rp 15.000)">Bloomies Lily – Baby Pink — Rp 15.000</option>
               <option value="Bloomies Lily – Lilac (Rp 15.000)">Bloomies Lily – Lilac — Rp 15.000</option>
@@ -421,40 +471,46 @@
               <option value="Everbloom Sunflower (Rp 25.000)">Sunflower — Rp 25.000</option>
               <option value="Everbloom Peony (Rp 30.000)">Peony — Rp 30.000</option>
             </optgroup>
-            <option value="Custom Request">✨ Custom Request — let's consult first</option>
+            <option value="Custom Request">✨ Custom Request — konsultasi dulu</option>
           </select>
         </div>
         <div class="fg-row">
           <div class="fg">
-            <label for="f-qty">Quantity</label>
+            <label for="f-qty">Jumlah</label>
             <input type="number" id="f-qty" min="1" value="1">
           </div>
           <div class="fg">
-            <label for="f-date">Date Needed</label>
-            <input type="date" id="f-date">
+            <label for="f-tgl">Tanggal Dibutuhkan</label>
+            <input type="date" id="f-tgl">
           </div>
         </div>
         <div class="fg">
-          <label for="f-notes">Notes / Custom Request (optional)</label>
-          <textarea id="f-notes" rows="3" placeholder="Specific colors, recipient's name, greeting card..."></textarea>
+          <label for="f-catatan">Catatan / Custom Request (opsional)</label>
+          <textarea id="f-catatan" rows="3" placeholder="Warna spesifik, nama penerima, kartu ucapan..."></textarea>
         </div>
-        <button class="btn-submit">🌸 Submit Order</button>
-        <p class="form-privacy">🔒 Data is stored securely, only used to process your order.</p>
+        <button class="btn-submit" onclick="submitOrder()">🌸 Kirim Pesanan</button>
+        <p class="form-privacy">🔒 Data tersimpan aman, hanya untuk memproses pesananmu.</p>
       </div>
 
       <div class="form-ok" id="form-ok">
         <span class="ok-icon">🎉</span>
-        <h3>Order Received!</h3>
-        <p>Thank you, <strong id="ok-name"></strong>! Your order has been received and will be processed shortly. 🌸</p>
+        <h3>Pesanan Diterima!</h3>
+        <p>Terima kasih, <strong id="ok-name"></strong>!<br>
+        Pesananmu sudah masuk dan akan segera kami proses. 🌸</p>
       </div>
     </div>
   </div>
 </section>
 
+
+<!-- ══════════════════════
+     FOOTER
+══════════════════════ -->
 <footer class="footer">
   <div class="footer-brand">Floriene</div>
   <p class="footer-copy">© 2026 Floriene Surabaya · Handcrafted with ❤️</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
